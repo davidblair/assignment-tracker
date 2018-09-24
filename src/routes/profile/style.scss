@@ -1,0 +1,82 @@
+.container {
+	min-height: 100%;
+	width: 100%;
+	margin: 56px 0 56px 0;
+
+	.top {
+		text-align: center;
+		height: 250px;
+		width: 100%;
+		padding-top: 20px;
+		background-color: #673AB7;
+		img {
+			max-width: 100px;
+			max-height: 100px;
+		}
+		svg {
+			path {
+				fill: white;
+			}
+		}
+		h2 {
+			color: white;
+			font-size: 1.5rem;
+		}
+		h3 {
+			color: white;
+			font-size: 1rem;
+		}
+	}
+	.actions {
+		h2 {
+			background-color: #CCC;
+			font-size: 1.2rem;
+			height: 50px;
+			width: 100%;
+			padding: 12px;
+		}
+		li {
+			&:hover {
+				background-color: #CCC;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: #673AB7;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		h2 {
+			padding-top: 5px;
+			color: #FFF;
+		}
+		button, a {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			height: 54px;
+			&:focus { outline: none; }
+			&:hover {
+				transition: all 0.25s ease-in-out;
+				svg { fill: rgba(255,255,255,0.8); }
+			}
+			svg {
+				fill: #FFF;
+				margin: 10px;
+			}
+		}
+	}	
+}
